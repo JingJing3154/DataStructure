@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SqList", "SqList.vcxproj", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkList", "..\LinkList\LinkList.vcxproj", "{DCCFA65E-450E-4C9B-99A1-3085B4035718}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DLinkList", "..\DLinkList\DLinkList.vcxproj", "{6D366393-406B-4F3E-BDB5-B26FBD2007DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{DCCFA65E-450E-4C9B-99A1-3085B4035718}.Release|x64.Build.0 = Release|x64
 		{DCCFA65E-450E-4C9B-99A1-3085B4035718}.Release|x86.ActiveCfg = Release|Win32
 		{DCCFA65E-450E-4C9B-99A1-3085B4035718}.Release|x86.Build.0 = Release|Win32
+		{6D366393-406B-4F3E-BDB5-B26FBD2007DE}.Debug|x64.ActiveCfg = Debug|x64
+		{6D366393-406B-4F3E-BDB5-B26FBD2007DE}.Debug|x64.Build.0 = Debug|x64
+		{6D366393-406B-4F3E-BDB5-B26FBD2007DE}.Debug|x86.ActiveCfg = Debug|Win32
+		{6D366393-406B-4F3E-BDB5-B26FBD2007DE}.Debug|x86.Build.0 = Debug|Win32
+		{6D366393-406B-4F3E-BDB5-B26FBD2007DE}.Release|x64.ActiveCfg = Release|x64
+		{6D366393-406B-4F3E-BDB5-B26FBD2007DE}.Release|x64.Build.0 = Release|x64
+		{6D366393-406B-4F3E-BDB5-B26FBD2007DE}.Release|x86.ActiveCfg = Release|Win32
+		{6D366393-406B-4F3E-BDB5-B26FBD2007DE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
