@@ -86,8 +86,7 @@ bool Dlist_Delete(DLinkList DL, int i) {
 	if (p == NULL) {
 		return false;
 	}
-	DLinkList q;
-	q= p->next;
+	DLinkList q = p->next;
 	if (q == NULL) {
 		return false;
 	}
