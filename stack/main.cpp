@@ -1,6 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include <string>
 #include <stdlib.h>
+using namespace std;
 #define MAX_SIZE 50
 typedef int ElemType;
 typedef struct {

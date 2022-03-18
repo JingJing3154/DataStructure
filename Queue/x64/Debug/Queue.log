@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\2022\DataStructure\Queue\main.cpp(39,7): warning C4101: “flag”: 未引用的局部变量
+  Queue.vcxproj -> D:\2022\DataStructure\SqList\x64\Debug\Queue.exe
