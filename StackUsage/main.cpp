@@ -65,12 +65,56 @@ bool Trans(string& str, string& str1) {
 	}
 	return true;
 }
+/*1. 遍历字符串，遇到操作数压入栈中，遇到操作数，则把 * *前两个 * *操作数取出，进行运算，再将结果压入栈中
+2. 最后将栈中最后的元素进行输出*/
+bool suffixCalculate(string str, int& res) {
+	int front, second,third=0;
+	stack<char> a;
+	for (int i = 0; i < str.size(); i++) {
+		if (str[i] >= '0' && str[i] <= '9') {
+			a.push(str[i]-'0');
+		}
+		else {
+			if (a.empty()) {
+				return false;
+			}
+			//后缀中不会出现括号所以只需要考虑运算符即可
+			second = a.top();
+			a.pop();
+			front = a.top();
+			a.pop();
+			switch (str[i]) {
+			case '+':
+				third = front + second;
+				break;
+			case '-':
+				third = front - second;
+				break;
+			case '*':
+				third = front * second;
+				break;
+			case '/':
+				third = front / second;
+				break;
+			default:break;
+			}
+			a.push(third);
+			front = second = third = 0;
+		}
+	}
+	res = a.top();
+	a.pop();
+	return true;
+}
 int main() {
+	int res;
 	string infix;
 	string postfix;
 	cout << "输入中缀表达式:" << infix << endl;
 	cin >> infix;
 	Trans(infix, postfix);
 	cout << "后缀表达式:" << postfix << endl;
+	suffixCalculate(postfix, res);
+	cout << "后缀表达式计算的结果是:" << res << endl;
 	return 1;
 }
