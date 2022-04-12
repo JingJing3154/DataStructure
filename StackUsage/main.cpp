@@ -116,5 +116,7 @@ int main() {
 	cout << "后缀表达式:" << postfix << endl;
 	suffixCalculate(postfix, res);
 	cout << "后缀表达式计算的结果是:" << res << endl;
+	int sss[10];
+	cout << sss[10];
 	return 1;
 }
